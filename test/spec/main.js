@@ -8,6 +8,7 @@ define(
             });
             it('should be failed', function() {
                 expect(identity.check('450101201401012219')).toBe(false);
+                expect(identity.check('111')).toBe(false);
             });
         });
     }

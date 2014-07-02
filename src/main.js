@@ -40,6 +40,9 @@
     * @return {boolean} 
     */
     function checkIdentity(str) {
+        if (!/^\d{17}[\dXx]$/.test(str)) {
+            return false;
+        }
         var sum = 0;
         // [1, 18)
         for(var i = 0; i < 17; i++) {
